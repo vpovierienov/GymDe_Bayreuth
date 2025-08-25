@@ -1,506 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Remix Icons -->
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-    />
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="main.css">
-    <!--CSS link favicon path ? No work!-->
-    <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
-    <title>DeBayreuth| Gym</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gym DeBayreuth — Build your best body with classes, trainers, and flexible plans." />
+
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Main CSS (relative paths for GitHub Pages) -->
+  <link rel="stylesheet" href="./main.css" />
+
+  <!-- Favicon (relative path for GitHub Pages) -->
+  <link rel="icon" href="./assets/img/favicon.png" sizes="32x32" type="image/png" />
+
+  <title>DeBayreuth | Gym</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav container">
-            <a href="#" class="main-logo">
-                <img src="/assets/img/logo.png" alt="logo" class="main-logo-img">
-                Gym DeBayreuth
-            </a>
+  <header class="header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="main-logo" aria-label="Gym DeBayreuth Home">
+        <img src="./assets/img/logo.png" alt="Gym DeBayreuth logo" class="main-logo-img" loading="lazy" />
+        Gym DeBayreuth
+      </a>
 
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active-link">Home</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a href="#choose-section" class="nav-link">Choose Us</a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a href="#program-section" class="nav-link">Program</a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a href="#pricing-section" class="nav-link">Pricing</a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a href="#" class="button nav-button">Register Now</a>
-                    </li>
-                </ul>
-    
-                <div class="nav-close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>
-            </div>
-            
-            <div class="nav-toggle" id="nav-toggle">
-                <i class="ri-menu-line"></i>
-            </div>
-                
-        </nav>
-        
+      <div class="nav-menu" id="nav-menu" aria-hidden="true" aria-label="Main Menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#choose-section" class="nav-link">Choose Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#program-section" class="nav-link">Program</a>
+          </li>
+          <li class="nav-item">
+            <a href="#pricing-section" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#pricing-section" class="button nav-button" role="button">Register Now</a>
+          </li>
+        </ul>
+        <button class="nav-close" id="nav-close" aria-label="Close menu" aria-controls="nav-menu">
+          <i class="ri-close-line" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-controls="nav-menu" aria-expanded="false">
+        <i class="ri-menu-line" aria-hidden="true"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <!-- Home -->
+    <section id="home" class="home section">
+      <div class="home-container container grid">
+        <div class="home-data">
+          <p class="home-subtitle">Keep Your</p>
+          <h1 class="home-title">Body Fit &amp; Strong</h1>
+          <p class="home-description">
+            We help you shape and build your ideal body so you can live life to the fullest.
+          </p>
+          <a href="#program-section" class="button button-flex">
+            Get started <i class="ri-arrow-right-line" aria-hidden="true"></i>
+          </a>
         </div>
-    </header>
-    <!-- Main Section -->
-    <main class="main">
-        <!-- Home -->
-        <section class="home section">
-            <div class="home-container container grid">
-                <div class="home-data">
-                    <h2 class="home-subtitle">
-                        Keep Your
-                    </h2>
-                    <h1 class="home-title">
-                        Body Fit & Strong
-                    </h1>
+        <img class="home-img" src="./assets/img/home-img.png" alt="Athlete training at the gym" loading="lazy" />
+      </div>
+    </section>
 
-                    <p class="home-description">
-                        In here we will help you to shape and build your ideal body and live your life to the fullest.
-                    </p>
+    <!-- Logos -->
+    <section class="logos container" aria-label="Partners">
+      <div class="logos-container grid">
+        <img src="./assets/img/logo1.png" alt="Partner logo 1" loading="lazy" />
+        <img src="./assets/img/logo2.png" alt="Partner logo 2" loading="lazy" />
+        <img src="./assets/img/logo3.png" alt="Partner logo 3" loading="lazy" />
+        <img src="./assets/img/logo4.png" alt="Partner logo 4" loading="lazy" />
+      </div>
+    </section>
 
-                    <a href="#" class="button button-flex">
-                        Get started <i class="ri-arrow-right-line"></i>
-                    </a>
-                </div>
+    <!-- Choose Us -->
+    <section class="choose section" id="choose-section">
+      <div class="choose-container container grid">
+        <div class="choose-group">
+          <img src="./assets/img/choose-img.png" alt="Gym facilities" class="choose-img" loading="lazy" />
+          <div class="choose-timing" aria-label="Opening Hours">
+            <h3>Opening Hours</h3>
+            <p class="choose-timing-time">08:00 — 22:00</p>
+          </div>
+        </div>
 
-                <img class="home-img" src="assets/img/home-img.png" alt="home-img">
+        <div class="choose-content">
+          <h2 class="section-title" data-title="Best Reason">Why Choose Us?</h2>
+          <p class="description">
+            Choose your favorite class and start now. Remember: the only bad workout is the one you didn't do.
+          </p>
+
+          <div class="choose-data grid" aria-label="Key stats">
+            <div class="choose-data-item">
+              <p class="choose-no">200+</p>
+              <p class="choose-data-subtitle">Total Members</p>
             </div>
-        </section>
-        <!-- Logos-->
-        <section class="logos container">
-            <div class="logos-container grid">
-                <img src="assets/img/logo1.png" alt="logo-1">
-                <img src="assets/img/logo2.png" alt="logo-2">
-                <img src="assets/img/logo3.png" alt="logo-3">
-                <img src="assets/img/logo4.png" alt="logo-4">
+            <div class="choose-data-item">
+              <p class="choose-no">50+</p>
+              <p class="choose-data-subtitle">Best Trainers</p>
             </div>
-        </section>
-        <!-- Choose US-->
-        <section class="choose section" id="choose-section">
-            <div class="choose-container container grid">
-                <div class="choose-group">
-                    <img src="/assets/img/choose-img.png" alt="choose-img" class="choose-img">
-
-                    <div class="choose-timing">
-                        <h3>Opening Hours</h3>
-                        <p class="choose-timing-time">08:00 - 10:00 PM</p>
-                    </div>
-
-                   
-                </div>
-
-                <div class="choose-content">
-                    <h1 class="section-title" data-title="Best Reason">Why Choose Us ?</h1>
-
-                    <p class="description">
-                        Choose your favorite class and start now. Remember the only bad workout is the one you didn't do.
-                    </p>
-
-                    <div class="choose-data grid">
-                        <div class="choose-data-item">
-                            <h3 class="choose-no">200+</h3>
-                            <p class="choose-data-subtitle">Total Members</p>
-                        </div>
-                        <!-- Choose Item 2 -->
-                        <div class="choose-data-item">
-                            <h3 class="choose-no">50+</h3>
-                            <p class="choose-data-subtitle">Best Trainers</p>
-                        </div>
-                        <!-- Choose Item 3 -->
-                        <div class="choose-data-item">
-                            <h3 class="choose-no">25+</h3>
-                            <p class="choose-data-subtitle">Programs</p>
-                        </div>
-                        <!-- Choose Item 3 -->
-                        <div class="choose-data-item">
-                            <h3 class="choose-no">100+</h3>
-                            <p class="choose-data-subtitle">Awards</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="choose-data-item">
+              <p class="choose-no">25+</p>
+              <p class="choose-data-subtitle">Programs</p>
             </div>
-        </section> 
-        <!-- Programm developed by vittello.dev -->
-        <section class="program container section" id="program-section">
-            <!-- BEFORE DEPLOYED CHECK SUB TITLE * DISPAY NONE * ?-->
-            <h1 class="section-title title-center" data-title="Our Program">
-                Build Your Best Body
-            </h1>
-
-            <div class="program-container">
-                <article class="program-card">
-                    <span class="program-no">01</span>
-
-                    <h3 class="program-title">Flex Muscle</h3>
-                    <p class="program-description">Creating tension that's temporarily making the muscle 
-                        fibers smaller or contracted.
-                    </p>
-                </article>
-
-                <article class="program-card">
-                    <span class="program-no">02</span>
-
-                    <h3 class="program-title">Basic Yoga</h3>
-                    <p class="program-description">Diaphragmatic this is the most common breathing 
-                        technique you'll find in yoga.
-                    </p>
-                </article>
-
-                <article class="program-card">
-                    <span class="program-no">03</span>
-
-                    <h3 class="program-title">Weight Lifting</h3>
-                    <p class="program-description">Attempts a maximum weight single lift of a 
-                        barbell loaded with weight plates.
-                    </p>
-                </article>
+            <div class="choose-data-item">
+              <p class="choose-no">100+</p>
+              <p class="choose-data-subtitle">Awards</p>
             </div>
-        </section>
-        <!-- === Pricing section developed by vittello.dev === -->
-        <section class="pricing container section" id="pricing-section">
-            <h1 class="section-title title-center" data-title="Pricing">
-                Our Special Plan
-            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="pricing-container">
-                <article class="pricing-card">
-                    <h1 class="pricing-title">Starter</h1>
-                    <h2 class="pricing-no">$120</h2>
+    <!-- Program -->
+    <section class="program container section" id="program-section">
+      <h2 class="section-title title-center" data-title="Our Program">Build Your Best Body</h2>
+      <div class="program-container">
+        <article class="program-card">
+          <span class="program-no">01</span>
+          <h3 class="program-title">Flex Muscle</h3>
+          <p class="program-description">
+            Create tension by contracting muscle fibers for strength and definition.
+          </p>
+        </article>
+        <article class="program-card">
+          <span class="program-no">02</span>
+          <h3 class="program-title">Basic Yoga</h3>
+          <p class="program-description">
+            Diaphragmatic breathing and foundational poses to improve mobility and calm.
+          </p>
+        </article>
+        <article class="program-card">
+          <span class="program-no">03</span>
+          <h3 class="program-title">Weight Lifting</h3>
+          <p class="program-description">
+            Progressive overload with barbell and free weights to build strength safely.
+          </p>
+        </article>
+      </div>
+    </section>
 
-                    <ul class="pricing-list">
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> 1 Week Acces
-                        </li>
+    <!-- Pricing -->
+    <section class="pricing container section" id="pricing-section">
+      <h2 class="section-title title-center" data-title="Pricing">Our Special Plan</h2>
+      <div class="pricing-container">
+        <article class="pricing-card">
+          <h3 class="pricing-title">Starter</h3>
+          <p class="pricing-no">$120</p>
+          <ul class="pricing-list" aria-label="Starter benefits">
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> 1 Week Access</li>
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> 24/7 Gym Access</li>
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> Personal Trainer</li>
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> Nutrition Plan</li>
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> Diet Planning</li>
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> Weekly Events</li>
+          </ul>
+          <a href="#" class="button button-flex pricing-button" role="button">Purchase Now <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+        </article>
 
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> 24/7 Gym Access
-                        </li>
+        <article class="pricing-card pricing-card-active">
+          <h3 class="pricing-title">Popular</h3>
+          <p class="pricing-no">$240</p>
+          <ul class="pricing-list" aria-label="Popular benefits">
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> 1 Week Access</li>
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> 24/7 Gym Access</li>
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> Personal Trainer</li>
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> Nutrition Plan</li>
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> Diet Planning</li>
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> Daily Events</li>
+          </ul>
+          <a href="#" class="button button-flex pricing-button" role="button">Purchase Now <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+        </article>
 
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> Personal Trainer
-                        </li>
+        <article class="pricing-card">
+          <h3 class="pricing-title">Advance</h3>
+          <p class="pricing-no">$420</p>
+          <ul class="pricing-list" aria-label="Advance benefits">
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> 1 Week Access</li>
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> 24/7 Gym Access</li>
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> Personal Trainer</li>
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> Nutrition Plan</li>
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> Diet Planning</li>
+            <li class="pricing-item"><i class="ri-checkbox-circle-line" aria-hidden="true"></i> Weekly Events</li>
+          </ul>
+          <a href="#" class="button button-flex pricing-button" role="button">Purchase Now <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+        </article>
+      </div>
+    </section>
 
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> Nutrition Plan
-                        </li>
+    <!-- BMI Calculate -->
+    <section class="calculate section">
+      <div class="calculate-container container grid">
+        <div class="calculate-content">
+          <h2 class="section-title" data-title="Best Reason">Calculate your BMI</h2>
+          <p class="description">
+            The body mass index (BMI) calculator estimates your BMI from weight and height.
+          </p>
 
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> Diet Planning
-                        </li>
-
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> Weekly Events
-
-                        </li>
-                    </ul>
-
-                    <a href="#" class="button button-flex pricing-button">
-                        Purchase Now <i class="ri-arrow-right-line"></i>
-                    </a>
-                </article>
-
-                <article class="pricing-card pricing-card-active">
-                    <h1 class="pricing-title">Popular</h1>
-                    <h2 class="pricing-no">$240</h2>
-
-                    <ul class="pricing-list">
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> 1 Week Acces
-                        </li>
-
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> 24/7 Gym Access
-                        </li>
-
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> Personal Trainer
-                        </li>
-
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> Nutrition Plan
-                        </li>
-
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> Diet Planning
-                        </li>
-
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> Daily Events
-                        </li>
-                    </ul>
-
-                    <a href="#" class="button button-flex pricing-button">
-                        Purchase Now <i class="ri-arrow-right-line"></i>
-                    </a>
-                </article>
-
-                <article class="pricing-card">
-                    <h1 class="pricing-title">Advance</h1>
-                    <h2 class="pricing-no">$420</h2>
-
-                    <ul class="pricing-list">
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> 1 Week Acces
-                        </li>
-
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> 24/7 Gym Access
-                        </li>
-
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> Personal Trainer
-                        </li>
-
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> Nutrition Plan
-                        </li>
-
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> Diet Planning
-                        </li>
-
-                        <li class="pricing-item">
-                            <i class="ri-checkbox-circle-line"></i> Weekly Events
-
-                        </li>
-                    </ul>
-
-                    <a href="#" class="button button-flex pricing-button">
-                        Purchase Now <i class="ri-arrow-right-line"></i>
-                    </a>
-                </article>
+          <form class="calculate-form grid" id="calculate-form" novalidate>
+            <div class="calculate-box">
+              <label for="calculate-cm" class="calculate-label">Height (cm)</label>
+              <input type="number" placeholder="e.g., 175" class="calculate-input" id="calculate-cm" inputmode="decimal" min="0" />
             </div>
-        </section>
-        <!-- === BMI calculate section developed by vittello.dev === -->
-        <section class="calculate section">
-            <div class="calculate-container container grid">
-                <div class="calculate-content">
-                    <h1 class="section-title" data-title="Best Reason">
-                        Calculate your BMI
-                    </h1>
-
-                    <p class="description">
-                        The body mass index (BMI) calculator calculates body mass index from your weight and height.
-                    </p>
-
-                    <form action="" class="calculate-form grid" id="calculate-form">
-                        <div class="calculate-box">
-                            <input 
-                            type="number" 
-                            placeholder="Height" 
-                            class="calculate-input"
-                            id="calculate-cm"
-                            />
-                            <label for="calculate-cm" class="calculate-label">cm</label>
-                        </div>
-
-                        <div class="calculate-box">
-                            <input 
-                            type="number" 
-                            placeholder="Weight" 
-                            class="calculate-input"
-                            id="calculate-kg"
-                            />
-                            <label for="calculate-kg" class="calculate-label">kg</label>
-                        </div>
-
-                        <button href="#" class="button button-flex" type="submit">
-                            Calculate BMI <i class="ri-arrow-right-line"></i>
-                        </button>
-                    </form>
-
-                    <p class="calculate-message" id="calculate-message">
-
-                    </p>
-                </div>
-                
-                <div class="calculate-images">
-                    <img src="/assets/img/calculate-img.png" alt="" class="calculate-img">
-                </div>
+            <div class="calculate-box">
+              <label for="calculate-kg" class="calculate-label">Weight (kg)</label>
+              <input type="number" placeholder="e.g., 70" class="calculate-input" id="calculate-kg" inputmode="decimal" min="0" />
             </div>
-        </section>
-        <!-- === Marquee Section - horizontal auto scrolling bar developed by vittello.dev === -->
-         <section class="marquee section"> 
-            <div class="marquee-bg">
-                <ul class="marquee-list">
-                    <li class="marquee-item">
-                        <i class="ri-asterisk">Live Classes</i>
-                    </li>
+            <button class="button button-flex" type="submit">
+              Calculate BMI <i class="ri-arrow-right-line" aria-hidden="true"></i>
+            </button>
+          </form>
+          <p class="calculate-message" id="calculate-message" aria-live="polite"></p>
+        </div>
 
-                    <li class="marquee-item">
-                        <i class="ri-asterisk">On-Demand Workouts</i>
-                    </li>
+        <div class="calculate-images">
+          <img src="./assets/img/calculate-img.png" alt="BMI illustration" class="calculate-img" loading="lazy" />
+        </div>
+      </div>
+    </section>
 
-                    <li class="marquee-item">
-                        <i class="ri-asterisk">Personal Trainers</i>
-                    </li>
+    <!-- Marquee -->
+    <section class="marquee section" aria-label="Highlights">
+      <div class="marquee-bg">
+        <ul class="marquee-list">
+          <li class="marquee-item"><i class="ri-asterisk" aria-hidden="true"></i><span>Live Classes</span></li>
+          <li class="marquee-item"><i class="ri-asterisk" aria-hidden="true"></i><span>On‑Demand Workouts</span></li>
+          <li class="marquee-item"><i class="ri-asterisk" aria-hidden="true"></i><span>Personal Trainers</span></li>
+          <li class="marquee-item"><i class="ri-asterisk" aria-hidden="true"></i><span>Outdoor &amp; Online Trainers</span></li>
+          <li class="marquee-item"><i class="ri-asterisk" aria-hidden="true"></i><span>Live Classes</span></li>
+          <li class="marquee-item"><i class="ri-asterisk" aria-hidden="true"></i><span>On‑Demand Workouts</span></li>
+          <li class="marquee-item"><i class="ri-asterisk" aria-hidden="true"></i><span>Personal Trainers</span></li>
+          <li class="marquee-item"><i class="ri-asterisk" aria-hidden="true"></i><span>Outdoor &amp; Online Trainers</span></li>
+        </ul>
+      </div>
+    </section>
 
-                    <li class="marquee-item">
-                        <i class="ri-asterisk">Outdoor & Online Trainers</i>
-                    </li>
+    <!-- Footer -->
+    <footer class="footer container section">
+      <div class="footer-container grid">
+        <div class="footer__block">
+          <a href="#home" class="main-logo footer-logo">
+            <img src="./assets/img/logo.png" alt="Gym DeBayreuth logo" class="main-logo-img" loading="lazy" />
+            Gym DeBayreuth
+          </a>
+          <p class="description">Subscribe for company updates below</p>
+          <form class="footer-form" novalidate>
+            <label class="sr-only" for="footer-email">Email</label>
+            <input id="footer-email" type="email" placeholder="Your Email" class="footer-input" />
+            <button class="button" type="submit">Subscribe</button>
+          </form>
+        </div>
 
-                    <li class="marquee-item">
-                        <i class="ri-asterisk">Live Classes</i>
-                    </li>
+        <div class="footer-content grid">
+          <div>
+            <h3 class="footer-title">Services</h3>
+            <ul class="footer-links">
+              <li><a href="#program-section" class="footer-link">Flex Muscle</a></li>
+              <li><a href="#program-section" class="footer-link">Basic Yoga</a></li>
+              <li><a href="#program-section" class="footer-link">Weight Lifting</a></li>
+            </ul>
+          </div>
+        </div>
 
-                    <li class="marquee-item">
-                        <i class="ri-asterisk">On-Demand Workouts</i>
-                    </li>
+        <div class="footer-content grid">
+          <div>
+            <h3 class="footer-title">Pricing</h3>
+            <ul class="footer-links">
+              <li><a href="#pricing-section" class="footer-link">Basic</a></li>
+              <li><a href="#pricing-section" class="footer-link">Premium</a></li>
+              <li><a href="#pricing-section" class="footer-link">Diamond</a></li>
+            </ul>
+          </div>
+        </div>
 
-                    <li class="marquee-item">
-                        <i class="ri-asterisk">Personal Trainers</i>
-                    </li>
+        <div class="footer-content grid">
+          <div>
+            <h3 class="footer-title">Company</h3>
+            <ul class="footer-links">
+              <li><a href="#" class="footer-link">About Us</a></li>
+              <li><a href="#" class="footer-link">Customers</a></li>
+              <li><a href="#" class="footer-link">Partners</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-                    <li class="marquee-item">
-                        <i class="ri-asterisk">Outdoor & Online Trainers</i>
-                    </li>
+      <div class="footer-group">
+        <span class="footer-copy">&copy; Copyright Vittello.dev@gmail.com | All rights reserved</span>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="footer-social-link" aria-label="Facebook">
+          <i class="ri-facebook-circle-fill" aria-hidden="true"></i>
+        </a>
+        <a href="https://x.com/" target="_blank" rel="noopener" class="footer-social-link" aria-label="Twitter / X">
+          <i class="ri-twitter-fill" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vitalii-povierienov-90647b212/" target="_blank" rel="noopener" class="footer-social-link" aria-label="LinkedIn">
+          <i class="ri-linkedin-fill" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
 
-                    <li class="marquee-item">
-                        <i class="ri-asterisk">Live Classes</i>
-                    </li>
+    <!-- Scroll Up Button -->
+    <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+      <i class="ri-arrow-up-line" aria-hidden="true"></i>
+    </a>
+  </main>
 
-                    <li class="marquee-item">
-                        <i class="ri-asterisk">On-Demand Workouts</i>
-                    </li>
-
-                    <li class="marquee-item">
-                        <i class="ri-asterisk">Personal Trainers</i>
-                    </li>
-
-                    <li class="marquee-item">
-                        <i class="ri-asterisk">Outdoor & Online Trainers</i>
-                    </li>
-                </ul>
-            </div>
-         </section>
-         <!-- Footer section developed by vittello.dev -->
-        <footer class="footer container section">
-            <div class="footer-container grid">
-                <div class="footer__block">
-                    <a href="#" class="main-logo footer-logo">
-                        <img src="/assets/img/logo.png" alt="logo" class="main-logo-img">
-                        Gym DeBayreuth
-                    </a>
-
-                    <p class="description">
-                        Subscribe for company updates below
-                    </p>
-
-                    <form action="" class="footer-form">
-                        <input type="email" placeholder="Your Email" class="footer-input">
-                        <button class="button" type="submit">Subscribe</button>
-                    </form>
-                </div>
-
-                <div class="footer-content grid">
-                    <div>
-                        <h3 class="footer-title">Services</h3>
-                        <ul class="footer-links">
-                            <li>
-                                <a href="#" class="footer-link">Flex Muscle</a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="footer-link">Basic Yoga</a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="footer-link">Weight Lifting</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="footer-content grid">
-                    <div>
-                        <h3 class="footer-title">Pricing</h3>
-                        <ul class="footer-links">
-                            <li>
-                                <a href="#" class="footer-link">Basic</a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="footer-link">Premium</a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="footer-link">Diamond</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="footer-content grid">
-                    <div>
-                        <h3 class="footer-title">Company</h3>
-                        <ul class="footer-links">
-                            <li>
-                                <a href="#" class="footer-link">About Us</a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="footer-link">Customers</a>
-                            </li>
-
-                            <li>
-                                <a href="#" class="footer-link">Partners</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-group">
-                <span class="footer-copy">&#169; Copyright Vittello.dev@gmail.com |  All rights reserved</span>
-
-                <a 
-                    href="https://www.facebook.com/" 
-                    target="_blank" 
-                    class="footer-social-link"
-                >
-                <i class="ri-facebook-circle-fill"></i>
-                </a>
-
-                <a 
-                    href="https://x.com/?mx=2" 
-                    target="_blank" 
-                    class="footer-social-link"
-                >
-                <i class="ri-twitter-fill"></i>
-                </a>
-
-                <a 
-                    href="https://www.linkedin.com/in/vitalii-povierienov-90647b212/" 
-                    target="_blank" 
-                    class="footer-social-link"
-                >
-                <i class="ri-linkedin-fill"></i>
-                </a>
-            </div>
-        </footer>
-        <!-- Scroll UP button-->
-         <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line"></i>
-         </a>
-    </main>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="/script.js"></script>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/scrollreveal" defer></script>
+  <script src="./script.js" defer></script>
+  <noscript>Your browser does not support JavaScript or it is disabled. Some features may not work.</noscript>
 </body>
-</html>     
+</html>
